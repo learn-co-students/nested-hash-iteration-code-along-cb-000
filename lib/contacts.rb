@@ -18,7 +18,6 @@ def remove_strawberry(contacts)
   contacts.each do |x, y|
     y.each do |a, b|
       b.delete("strawberry")
-      puts "#{b}"
     end
   end
 end
