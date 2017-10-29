@@ -17,6 +17,11 @@ require 'pry'
 def remove_strawberry(contacts)
   # step 1: iterate over first level
   contacts.each do |person, contact_details|
-    binding.pry
+    # binding.pry
+
+    # step 2: iterate over second level
+    contact_details.each do |attribute, value|
+      binding.pry
+    end
   end
 end
