@@ -25,8 +25,12 @@ def remove_strawberry(contacts)
 
       # step 3: locate the required attribute and its corresponding data
       if attribute == :favorite_ice_cream_flavors
-        binding.pry
+
+        # step 4: use delete_if to iterate through the ice cream array and remove any element that matches "strawberry"
+        value.delete_if { |ice_cream| ice_cream == "strawberry" }
       end
     end
   end
 end
+
+# run file: ruby bin/contacts
