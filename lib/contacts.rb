@@ -21,7 +21,12 @@ def remove_strawberry(contacts)
 
     # step 2: iterate over second level
     contact_details.each do |attribute, value|
-      binding.pry
+      # binding.pry
+
+      # step 3: locate the required attribute and its corresponding data
+      if attribute == :favorite_ice_cream_flavors
+        binding.pry
+      end
     end
   end
 end
